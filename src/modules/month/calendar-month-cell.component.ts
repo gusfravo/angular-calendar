@@ -39,9 +39,6 @@ import { trackByEventId } from '../common/util';
           [tooltipEvent]="event"
           [tooltipTemplate]="tooltipTemplate"
           [tooltipAppendToBody]="tooltipAppendToBody"
-          mwlDraggable
-          [dropData]="{event: event}"
-          [dragAxis]="{x: event.draggable, y: event.draggable}"
           (mwlClick)="eventClicked.emit({ event: event })">
         </div>
       </div>
